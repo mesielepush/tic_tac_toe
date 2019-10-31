@@ -23,4 +23,22 @@ while getting_players
       puts "| I don't know what you're saying, repeat please"
     end
 end
-puts 'OKO'
+
+turn = ['player']
+gaming = true
+
+while gaming
+    puts '  | 1 | 2 | 3 |'
+    puts 'a | - | - | - |'
+    puts 'b | - | - | - |'
+    puts 'c | - | - | - |'
+    puts ''
+    puts "| It's Your turn Human, tell me your move |"
+    puts "| end for leaving |"
+
+    move = gets.chomp
+    if move == 'end'
+        gaming == false
+    end
+    puts "| You just play #{move}|"
+end
